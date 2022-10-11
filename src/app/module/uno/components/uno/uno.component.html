@@ -1,0 +1,11 @@
+<p>uno works!</p>
+
+<div *ngIf="personaje$ | async as info">
+  
+
+   <ng-container *ngFor=" let personaje of info.personaje.results" >
+    <img [src]="personaje.image" alt="">
+   </ng-container>
+
+
+</div>
